@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Matcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #76B900; /* Radium Green color */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Regular Expressions Matcher</h1>
+    <form action="/results" method="post">
+        <label for="text">Text:</label><br>
+        <input type="text" id="text" name="text"><br>
+        <label for="pattern">Pattern:</label><br>
+        <input type="text" id="pattern" name="pattern"><br><br>
+        <input type="submit" value="Check Text Pattern">
+    </form>
+    <h1>Email Validity</h1>
+    <form action="/validate_email" method="post">
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" required><br>
+        <input type="submit" value="Validate Email">
+    </form>
+</body>
+</html>
